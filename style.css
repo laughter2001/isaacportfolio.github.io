@@ -601,16 +601,10 @@ body {
 }
 
 .social-link:hover {
-  background: var(--accent-color);
   color: white;
   border-color: var(--accent-color);
   box-shadow: none;
   transform: scale(1.1);
-}
-
-.social-link:active {
-  transform: scale(0.95);
-  box-shadow: none;
 }
 
 /* Footer */
