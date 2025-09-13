@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isaac</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav-container">
+        <a href="#home" class="logo">ISAAC</a>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <button class="theme-toggle" id="theme-toggle">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+        <button class="mobile-menu" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>Isaac Sichalwe</h1>
+          <h2>Full Stack Developer & IT Specialist</h2>
+          <p>
+            I create beautiful, responsive websites and applications that
+            deliver exceptional user experiences. Let's build something amazing
+            together.
+          </p>
+          <div class="hero-buttons">
+            <a href="#portfolio" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-image">
+            <img src="profile.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <div>
+          <h2 class="section-title">About Me</h2>
+          <p>
+            I'm a passionate developer with experience creating digital
+            solutions that make a difference. I specialize in modern web
+            technologies and love turning complex problems into simple,
+            beautiful designs.
+          </p>
+          <p>
+            When I'm not coding, you can find me exploring new technologies,
+            playing basketball or dancing.
+          </p>
+        </div>
+        <div class="skills">
+          <div class="skill-item">
+            <img src="Svg/js-svgrepo-com.svg" alt="JavaScript icon" />
+            <h4>JavaScript</h4>
+          </div>
+          <div class="skill-item">
+            <img src="Svg/react-svgrepo-com.svg" alt="ReactJS icon" />
+            <h4>React</h4>
+          </div>
+          <div class="skill-item">
+            <img src="Svg/node-js-svgrepo-com.svg" alt="NodeJs icon" />
+            <h4>Node.js</h4>
+          </div>
+          <div class="skill-item">
+            <img src="Svg/php-svgrepo-com.svg" alt="PHP icon" />
+            <h4>Php</h4>
+          </div>
+          <div class="skill-item">
+            <img
+              src="Svg/sql-database-sql-azure-svgrepo-com.svg"
+              alt="SQL icon"
+            />
+            <h4>SQL</h4>
+          </div>
+          <div class="skill-item">
+            <img src="Svg/figma-svgrepo-com.svg" alt="" />
+            <h4>Figma</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio-container">
+        <h2 class="section-title">My Portfolio</h2>
+        <div class="portfolio-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="Icons/graph_8242390.png" alt="" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-Commerce Platform</h3>
+              <p class="project-description">
+                A full-stack e-commerce solution with modern UI/UX, secure
+                payments, and admin dashboard.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <img src="Svg/screencast-svgrepo-com.svg" />Live Demo
+                </a>
+                <a href="#" class="project-link">
+                  <img src="Svg/github-svgrepo-com.svg" /> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="Icons/weather-app_4519124.png" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Task Management App</h3>
+              <p class="project-description">
+                A collaborative task management application with real-time
+                updates and team features.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">PWA</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <img src="Svg/screencast-svgrepo-com.svg" /> Live Demo
+                </a>
+                <a href="#" class="project-link">
+                  <img src="Svg/github-svgrepo-com.svg" /> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Analytics Dashboard</h3>
+              <p class="project-description">
+                A data visualization dashboard with interactive charts and
+                real-time analytics.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">D3.js</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <img src="Svg/screencast-svgrepo-com.svg" /> Live Demo
+                </a>
+                <a href="#" class="project-link">
+                  <img src="Svg/github-svgrepo-com.svg" />GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume" id="resume">
+      <div class="resume-container">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-content">
+          <div class="resume-section">
+            <h3>Experience</h3>
+            <div class="resume-item">
+              <h4>Intern IT support Specialist</h4>
+              <div class="meta">Copperstone University. | 2022 - 2024</div>
+              <p>
+                Provided tier-1 and tier-2 technical support to faculty and
+                students, resolving 95% of issues within 24 hours. Diagnosed and
+                resolved network connectivity issues, reducing system downtime
+                by 30%.
+              </p>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h3>Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Science in Computer Science</h4>
+              <div class="meta">Copperstone University | 2021 - 2024</div>
+              <p>
+                Focused on software engineering, computer network, and web
+                development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p>
+          I'm always interested in new opportunities and collaborations. Let's
+          discuss how we can work together!
+        </p>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <img src="Svg/email-8-svgrepo-com.svg" />
+              <h4>Email</h4>
+              <a href="mailto:isaacsichalwebusiness@gmail.com"
+                >isaacsichalwebusiness@gmail.com</a
+              >
+            </div>
+            <div class="contact-item">
+              <img src="Svg/phone-svgrepo-com.svg" />
+              <h4>Phone</h4>
+              <p>+260764254593</p>
+            </div>
+            <div class="contact-item">
+              <img src="Svg/location-pin-svgrepo-com.svg" />
+              <h4>Copperbelt Province</h4>
+              <p>Kitwe, Zambia</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link"
+              ><img src="Svg/github-svgrepo-com.svg"
+            /></a>
+            <a href="#" class="social-link"
+              ><img src="Svg/linkedin-svgrepo-com.svg"
+            /></a>
+            <a href="#" class="social-link"
+              ><img src="Svg/instagram-1-svgrepo-com.svg"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Isaac Sichalwe. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
